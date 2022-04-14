@@ -23,4 +23,11 @@ list2 = %w(b c d)
 p (list2 - list1)
 
 # キュー：first in first out（FIFO）-> pushとshift
+list = %w(a b c d e)
+p list.push("f")
+p list.shift # -> "a"  # shift は先頭要素を取り出す
+
 # スタック：Last in First out（LIFO）->pushとpop
+list = %w(a b c d e)
+p list.push("f")
+p list.pop # -> "f"  # pop は先頭要素を取り出す
