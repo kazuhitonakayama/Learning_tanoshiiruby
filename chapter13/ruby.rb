@@ -31,3 +31,16 @@ p list.shift # -> "a"  # shift は先頭要素を取り出す
 list = %w(a b c d e)
 p list.push("f")
 p list.pop # -> "f"  # pop は先頭要素を取り出す
+
+
+p "------"
+p "配列の先頭に要素を追加する unshift"
+list = %w(a b c d e)
+p "元のlist：#{list}"
+p list.unshift("f")
+
+p "------"
+p "配列の最後尾に要素を追加する push"
+list = %w(a b c d e)
+p "元のlist：#{list}"
+p list.push("f")
