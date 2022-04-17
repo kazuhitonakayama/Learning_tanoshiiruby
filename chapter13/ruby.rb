@@ -44,3 +44,21 @@ p "配列の最後尾に要素を追加する push"
 list = %w(a b c d e)
 p "元のlist：#{list}"
 p list.push("f")
+
+p "------"
+p "配列の結合（+）を試してみるよ"
+listSingle = %w(a b c d e)
+listDouble = %w(ka bf cf df ef)
+result = listSingle + listDouble
+p "元のlistがどうなるか：#{listSingle}"
+p "結合の結論：#{result}"
+p "つまり配列結合における＋は非破壊だよ"
+
+p "------"
+p "配列の結合（concat）を試してみるよ"
+listSingle = %w(a b c d e)
+listDouble = %w(ka bf cf df ef)
+result = listSingle.concat(listDouble)
+p "元のlistがどうなるか：#{listSingle}"
+p "結合の結論：#{result}"
+p "つまり配列結合におけるconcatは破壊的メソッドだよ"
