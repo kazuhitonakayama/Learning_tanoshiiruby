@@ -62,3 +62,12 @@ result = listSingle.concat(listDouble)
 p "元のlistがどうなるか：#{listSingle}"
 p "結合の結論：#{result}"
 p "つまり配列結合におけるconcatは破壊的メソッドだよ"
+
+p "------"
+p "...と..の違いを確認するよ"
+list = %w(a b c d e f g)
+
+p "元のリストは、#{list}"
+p "これは1..3の場合：#{list[1..3]}、つまり3つ目も含むよ"
+p "これは1...3の場合：#{list[1...3]}、つまり、3つ目は含まないよ"
+
