@@ -115,3 +115,38 @@ list =["a", "b","c"]
 p "元のリストは、#{list}"
 p "shiftを実行すると#{list.pop}、ね、末尾の要素が取り出されたよね？"
 p "実行後、元のリストは、#{list}、つまり破壊的だね"
+
+p "------"
+p "fillは配列の要素を置き換えるよ"
+list =["a", "b","c"]
+
+p "元のリストは、#{list}"
+p "fillを実行すると#{list.fill("fillした結果")}、ね、要素がfillした結果、になったよね？"
+p "実行後、元のリストは、#{list}、つまり破壊的だね"
+
+p "------"
+p "flattenは配列の要素を置き換えるよ"
+list =["a", "b","c", ["aa", "bb"]]
+
+p "元のリストは、#{list}"
+p "flattenを実行すると#{list.flatten}"
+p "実行後、元のリストは、#{list}、つまり非破壊的だね"
+
+p "------"
+p "練習問題！第一問"
+list = Array.new
+100.times do |i|
+  list.push(i + 1)
+end
+p list
+
+p "------"
+p "練習問題！第二問 配列の各要素を100倍した新しい配列を作成する"
+listb = list.map { |n| n * 100}
+p listb
+
+
+p "------"
+p "練習問題！第三問 listから3の倍数だけを取り出す"
+listb = list.find_all { |n| n % 3 == 0}
+p listb
