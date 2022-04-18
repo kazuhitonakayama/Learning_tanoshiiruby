@@ -71,3 +71,30 @@ p "元のリストは、#{list}"
 p "これは1..3の場合：#{list[1..3]}、つまり3つ目も含むよ"
 p "これは1...3の場合：#{list[1...3]}、つまり、3つ目は含まないよ"
 
+p "------"
+p "freezeの効果を確認するよ"
+list = %w(a b c d e f g).freeze
+
+p "元のリストは、#{list}"
+
+begin
+  list.push("freese！")
+rescue
+  p "freezeのエラーが出るよ"
+end
+
+p "------"
+p "compactは配列からnilのものを取り除くよ"
+list =["a", "b","c", nil, nil]
+
+p "元のリストは、#{list}"
+p "compactを実行すると、#{list.compact}、ね、nilが除かれたたよね？"
+p "実行後、元のリストは、#{list}、つまり非破壊"
+
+p "------"
+p "compact!は配列からnilのものを破壊的に取り除くよ"
+list =["a", "b","c", nil, nil]
+
+p "元のリストは、#{list}"
+p "compactを実行すると、#{list.compact!}、ね、nilが除かれたたよね？"
+p "実行後、元のリストは、#{list}、つまり破壊的だね"
