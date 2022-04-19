@@ -147,6 +147,11 @@ p listb
 
 
 p "------"
-p "練習問題！第三問 listから3の倍数だけを取り出す"
+p "練習問題！第三問A問題 listから3の倍数だけを取り出す"
 listb = list.find_all { |n| n % 3 == 0}
+p listb
+
+p "------"
+p "練習問題！第三問B問題 listから3の倍数だけを除いて配列を作成する"
+listb = list.reject { |n| n % 3 == 0}
 p listb
