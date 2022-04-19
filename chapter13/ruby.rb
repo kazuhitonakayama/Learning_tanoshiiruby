@@ -140,6 +140,11 @@ list = Array.new
 end
 p list
 
+p "========"
+p "別解"
+another = (1..100).to_a
+p another
+
 p "------"
 p "練習問題！第二問 配列の各要素を100倍した新しい配列を作成する"
 listb = list.map { |n| n * 100}
