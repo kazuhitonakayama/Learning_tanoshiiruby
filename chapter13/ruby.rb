@@ -155,3 +155,49 @@ p "------"
 p "練習問題！第三問B問題 listから3の倍数だけを除いて配列を作成する"
 listb = list.reject { |n| n % 3 == 0}
 p listb
+
+p "------"
+p "練習問題！第四問 listの逆に並び替える"
+listb = list.reverse
+p listb
+
+p "------"
+p "練習問題！第五問 listに含まれる整数の合計"
+sum = 0
+list.each do |item|
+  sum += item
+end
+
+p sum
+
+p "------"
+p "練習問題！第六問 10個ずつ取り出して、新たな配列に格納する"
+result = Array.new
+
+10.times do |i|
+  result << list[i * 10, 10]
+  # 0..9
+  # 10..19
+  # 20..29
+  # 30..
+end
+
+p result
+
+p "------"
+p "練習問題！第七問 arr1とarr2に対して、それらの個々の要素を足し合わせた要素からなる配列を返すメソッドsum_arrayを定義してください"
+arr1 = [1, 2, 3]
+arr2 = [4, 6, 8]
+
+
+def sum_array(arr1, arr2)
+  result = Array.new
+
+  arr1.zip(arr2) do |a, b|
+    result << a + b
+  end
+  
+  return result
+end
+
+p sum_array(arr1, arr2)
