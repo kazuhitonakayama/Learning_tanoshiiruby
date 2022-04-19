@@ -173,6 +173,11 @@ listb = list.reverse
 p listb
 
 p "------"
+p "練習問題！第四問 別解"
+listb = list.sort_by {|i| -i}
+p listb
+
+p "------"
 p "練習問題！第五問 listに含まれる整数の合計"
 sum = 0
 list.each do |item|
@@ -212,3 +217,4 @@ def sum_array(arr1, arr2)
 end
 
 p sum_array(arr1, arr2)
+
