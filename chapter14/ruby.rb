@@ -31,3 +31,9 @@ p "========="
 str = "abcde"
 str.slice!(1, 3)
 p "元の文字列：#{str}：slice!は破壊的"
+
+p "========="
+str = "あ\nい\nう\n"
+p "each_lineやeacy_charとかはこんなふうにEnumeratorオブジェクトを返却するよ：#{str.each_line}"
+
+
