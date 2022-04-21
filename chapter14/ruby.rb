@@ -36,4 +36,7 @@ p "========="
 str = "あ\nい\nう\n"
 p "each_lineやeacy_charとかはこんなふうにEnumeratorオブジェクトを返却するよ：#{str.each_line}"
 
-
+p "========="
+p "swapcaseは小文字を大文字に、大文字を小文字にするよ"
+str = "Kazuhito Nakayama"
+p str.swapcase
