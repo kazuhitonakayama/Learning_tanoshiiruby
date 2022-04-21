@@ -40,3 +40,8 @@ p "========="
 p "swapcaseは小文字を大文字に、大文字を小文字にするよ"
 str = "Kazuhito Nakayama"
 p str.swapcase
+
+p "========="
+p "capitalize は先頭を大文字に"
+str = "orient culture"
+p str.capitalize
