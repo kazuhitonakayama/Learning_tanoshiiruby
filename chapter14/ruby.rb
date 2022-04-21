@@ -45,3 +45,8 @@ p "========="
 p "capitalize は先頭を大文字に"
 str = "orient culture"
 p str.capitalize
+
+p "========="
+p "tr は gsubと似ているが、複数の文字について置換を設定できる。gsubと違うのは、複数の文字の置換はできない"
+str = "orient culture"
+p str.tr("o", "O")
