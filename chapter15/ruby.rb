@@ -22,3 +22,4 @@ hash = {"a" => "こxれはaだよ！", "b" => "これはbだよ！"}
 p "キーを配列で表示：#{hash.keys}"
 p "バリューをvaluesで表示：#{hash.values}"
 p "ペアを取り出す：#{hash.to_a}"
+
