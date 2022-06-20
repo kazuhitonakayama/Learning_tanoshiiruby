@@ -92,3 +92,11 @@ p reg =~ "afCCCKazu"
 p "2と表示されてたら良さそう↑"
 p reg =~ "ACCKazu" 
 p "nilと表示されてたら良さそう↑"
+
+p "============="
+p "繰り返しの上限下限の回数指定は`{n, m}`にて。注意`,`の後はスペース厳禁"
+reg = /C{3,5}Kazu/
+p reg =~ "afCCCCCKazu" 
+p "2と表示されてたら良さそう↑"
+p reg =~ "AFACCCKazu" 
+p "3と表示されてたら良さそう↑"
