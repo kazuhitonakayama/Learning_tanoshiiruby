@@ -71,3 +71,8 @@ reg = /Mary\z/
 p reg =~ "smiss-Mary" 
 p "6と表示されてたら良さそう↑"
 
+p "============="
+p "`*`は0回以上の繰り返しにマッチする"
+reg = /A*Kazu/
+p reg =~ "AAAaAAAKazu" 
+p "4と表示されてたら良さそう↑"
