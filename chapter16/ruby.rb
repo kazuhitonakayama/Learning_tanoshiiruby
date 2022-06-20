@@ -84,3 +84,11 @@ p reg =~ "AKazu"
 p "nilと表示されてたら良さそう↑"
 p reg =~ "ACKazu" 
 p "1と表示されてたら良さそう↑"
+
+p "============="
+p "繰り返しの回数指定は`{n}`にて"
+reg = /C{3}Kazu/
+p reg =~ "afCCCKazu" 
+p "2と表示されてたら良さそう↑"
+p reg =~ "ACCKazu" 
+p "nilと表示されてたら良さそう↑"
