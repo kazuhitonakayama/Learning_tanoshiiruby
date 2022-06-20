@@ -65,3 +65,9 @@ reg = /\AMary/
 p reg =~ "J.Mary-smiss" 
 p "nilと表示されてたら良さそう↑"
 
+p "============="
+p "\zは文字列の末尾にマッチする"
+reg = /Mary\z/
+p reg =~ "smiss-Mary" 
+p "6と表示されてたら良さそう↑"
+
